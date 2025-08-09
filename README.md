@@ -1,4 +1,16 @@
-# Overview
+# 🏦 Loan Approval Prediction with Streamlit Deployment
+
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python"/></a>&nbsp;&nbsp;
+  <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white" alt="Pandas"/></a>&nbsp;&nbsp;
+  <a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-learn"/></a>&nbsp;&nbsp;
+  <a href="https://seaborn.pydata.org/"><img src="https://img.shields.io/badge/Seaborn-4C72B0?logo=plotly&logoColor=white" alt="Seaborn"/></a>
+</p>
+
+---
+
+## 📌 Overview
+
 The rising number of loan applications around the world is putting a lot of pressure
 on banks to process and approve loans quickly and accurately. Unfortunately, this
 often leads to delays and inconsistencies, making it harder for banks to properly
@@ -10,42 +22,80 @@ all the time.
 To solve this, we’ve developed a machine learning model that predicts the chances
 of a loan being approved based on different factors. This model helps banks speed
 up their approval process, make better decisions, and lower the risk of defaults.
+It includes:
+- **Data cleaning**
+- **Exploratory data analysis (EDA)**
+- **Machine learning model training**
+- **Model Evaluation**
 
+---
 
-This is achieved by firstly exploring the dataset of some loan applicants in a bank.
-Data preprocessing is then applied to remove several outliers in the data, to fill in
-the records with no data in some parts, and to encode categorical data to convert it
-to numerical form. 
+## 🚀 Features
 
+- **Data Preprocessing** — Handles missing values, encodes categorical variables, and scales features.
+- **EDA** — Visualizes correlations and trends in loan approval data.
+- **Model Training** — Uses machine learning algorithms to predict loan approval.
+- **Model Evaluation** — Evaluate all trained models and identifying the best model.
 
-The last part is to build several machine learning models and a
-final evaluation is utilized to select the best model based on performance. 5 models
-were utilized during this process: Logistic regression, K- Nearest Neighbours,
-Support Vector Machine, Decision Tree and Random Forest.
+---
 
-# About the Dataset
-The dataset contains 58644 row, and 13 columns. Below is an overview of the features found in the dataset.
-ID
-- person_age
-- person_income (annual income)
-- person_home_ownership:
-  - Own: which means the person owns the house
-  - Rent: which means the person is paying rent for living in the house
-  - Mortgage: which means the person is taking a loan to own the house
-- person_emp_length: which means the duration of employment in months
-- loan_intent: which means the reason for applying for a loan
-- loan_grade: The bank has several grades from A to G (we will discuss this point in detail)
-- loan_amnt: amount of loan needed
-- loan_int_rate: interest rate for the loan decided by the bank
-- loan_percent_income: the percentage of the loan compared to the income of the person
-- cb_person_default_on_file: This field declares if the person has paid all his credit debt or not (N means he has fully paid, and Y means he didn’t).
-- cb_person_cred_hist_length: Credit history of the applicant in months.
-- loan_status: declares whether the loan is approved or not.
+## 📊 Dataset
 
-# Tools
-- Python --> 3.12
-- Numpy --> 2.2.2
-- Pandas --> 2.2.3
-- seaborn --> 0.13.2
-- matplotlib --> 3.10.0
-- scikit learn --> 1.6.1
+- **File:** `Loan approval prediction.csv`  
+- **Contents:** Applicant demographic & financial details along with loan approval status.
+- **Target variable:** `Loan_Status` (Approved / Not Approved)
+
+---
+
+## 🏗️ Project Structure
+
+```
+.
+├── Loan approval prediction.csv   # Dataset
+├── solution.ipynb                 # Main Jupyter Notebook
+├── requirnemts.txt                 # Project instructions
+├── README.md                       # Documentation
+```
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the repository**:
+```bash
+git clone https://github.com/ZeyadMohamad/Loan-Approval-Prediction.git
+cd Loan-Approval-Prediction
+```
+
+2. **Install dependencies**:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🖥️ Usage
+
+1. **Run the Jupyter Notebook**:
+```bash
+jupyter notebook solution.ipynb
+```
+
+2. **Run the Streamlit App**:
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📈 Example Flow
+
+1. Upload loan applicant data (or enter manually).
+2. Model predicts **Approval** or **Rejection**.
+3. View probability scores and insights.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
