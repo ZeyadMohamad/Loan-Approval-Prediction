@@ -76,17 +76,10 @@ pip install -r requirements.txt
 
 ## 🖥️ Usage
 
-1. **Run the Jupyter Notebook**:
+**Run the Jupyter Notebook**:
 ```bash
 jupyter notebook solution.ipynb
 ```
-
-2. **Run the Streamlit App**:
-```bash
-streamlit run app.py
-```
-
----
 
 ## 📈 Example Flow
 
