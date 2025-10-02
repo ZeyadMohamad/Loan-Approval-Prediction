@@ -1,4 +1,4 @@
-# 🏦 Loan Approval Prediction with Streamlit Deployment
+# 🏦 Loan Approval Prediction
 
 <p align="center">
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python"/></a>&nbsp;&nbsp;
